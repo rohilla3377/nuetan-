@@ -24,7 +24,7 @@ function setup() {
 
 	bobObject1 = new Bob(250,300);
 	bobObject2= new Bob(300,300);
-	bobobject3= new Bob (350,300);
+	bobObject3= new Bob (350,300);
 	bobObject4 = new Bob(400,300);
 	bobObject5 = new Bob(450,300);
 
@@ -64,11 +64,11 @@ function draw() {
 	bobObject5.display();
 
 
-	roof11.display();
-	roof2.display();
-	roof3.display();
-	roof4.display();
-	roof5.display();
+	rope11.display();
+	rope2.display();
+	rope3.display();
+	rope4.display();
+	rope5.display();
 	
   background(0);
   
