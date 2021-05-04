@@ -8,8 +8,8 @@ var op = {
     pointB: {x:this.offfsetX, y:this.offsetY}
 
 }
-this.rope = Matter.constraint.create(op);
-world.addd(world,this.rope);
+this.rope = Matter.Constraint.create(op);
+World.addd(world,this.rope);
 
 }
 display(){
