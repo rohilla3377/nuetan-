@@ -17,7 +17,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	roof = Engine.create();
+	
 	world = engine.world;
 	roof= new Roof(350,100,300,30);
 	World.add(world,roof);
@@ -29,20 +29,20 @@ function setup() {
 	bobObject5 = new Bob(450,300);
 
 	
-rope1 = new Rope(bobobject1.bobdy,roof.body,-100,0);
-world.addd(world,rope1);
+rope11 = new Rope(bobObject1.bobdy,roof.body,-100,0);
+World.addd(world,rope1);
 
-rope2 = new Rope(bobobject2.body,roof.body,-50,0);
-world.addd(world, rope2);
+rope2 = new Rope(bobObject2.body,roof.body,-50,0);
+World.addd(world, rope2);
 
 rope3 = new Rope(bobObject3.body,roof.body,0,0);
-world.add(world,rope3);
+World.add(world,rope3);
 
-rope4 = new Rope(bobobject4.body,roof.body,+50,0);
+rope4 = new Rope(bobObject4.body,roof.body,+50,0);
 World.add(world,rope4);
 
-rope5 = new Rope(bobobject5.body,roof.body,+100,0);
-world.add(world, rope5);
+rope5 = new Rope(bobObject5.body,roof.body,+100,0);
+World.add(world, rope5);
 
 	Engine.run(engine);
   
@@ -57,14 +57,14 @@ function draw() {
 
 	roof.display();
 
-	bobobject1.display();
-	bobobject2.display();
-	bobobject3.display();
-	bobobject4.display();
-	bobobject5.display();
+	bobObject1.display();
+	bobObject2.display();
+	bobObject3.display();
+	bobObject4.display();
+	bobObject5.display();
 
 
-	roof1.display();
+	roof11.display();
 	roof2.display();
 	roof3.display();
 	roof4.display();
@@ -77,7 +77,7 @@ function draw() {
 }
 function keyPressed(){
 	if(keyCode===32){
-		Matter.body.applyForce(bobObject1.body,bobObject1.body.position,{x:-730,y:-0});
+		Matter.Body.applyForce(bobObject1.body,bobObject1.body.position,{x:-730,y:-0});
 	}
 }
 
